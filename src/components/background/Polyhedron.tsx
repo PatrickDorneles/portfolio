@@ -3,6 +3,13 @@
 import { forwardRef, useImperativeHandle, useRef } from "react";
 import { Icosahedron } from "@react-three/drei";
 import * as THREE from "three";
+import type {
+  Mesh,
+  BufferGeometry,
+  NormalBufferAttributes,
+  Material,
+  Object3DEventMap,
+} from "three";
 import { usePolyhedronAnimation } from "./PolyhedronAnimation";
 
 interface PolyhedronProps {
@@ -16,18 +23,21 @@ export const Polyhedron = forwardRef<THREE.Mesh, PolyhedronProps>(
 
     useImperativeHandle(ref, () => meshRef.current!, []);
 
-    usePolyhedronAnimation({ 
+    usePolyhedronAnimation({
       meshRef,
-      polyhedrons: { current: polyhedrons.current?.filter(Boolean) || [] }
+      polyhedrons: {
+        current: (polyhedrons.current ?? []).filter(
+          (mesh) => mesh !== null,
+        ) as Mesh<
+          BufferGeometry<NormalBufferAttributes>,
+          Material | Material[],
+          Object3DEventMap
+        >[],
+      },
     });
 
     return (
-      <Icosahedron
-        ref={meshRef}
-        position={position}
-        args={[1, 0]}
-        scale={3}
-      >
+      <Icosahedron ref={meshRef} position={position} args={[1, 0]} scale={3}>
         <meshPhongMaterial
           color="#6366f1"
           opacity={0.15}
@@ -36,5 +46,6 @@ export const Polyhedron = forwardRef<THREE.Mesh, PolyhedronProps>(
         />
       </Icosahedron>
     );
-  }
+  },
 );
+Polyhedron.displayName = "Polyhedron";
