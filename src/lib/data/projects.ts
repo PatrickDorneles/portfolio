@@ -17,7 +17,7 @@ export const projects: Record<string, Project> = {
     tech: ["React", "NextJS", "TailwindCSS", "Markdown", "Jotai"],
     image: "https://i.imgur.com/dgCLha1.png",
     fullDescription: `
-      Created this calculator for a complex point based skill assessment system for the Tormenta20 RPG system, a the time there were no calculator likewise made for this system, so instead of just making a basic calculator I focused on simplicity and customizability.
+      Created this calculator for a complex point based skill system for the Tormenta20 RPG system, a the time there were no calculator likewise made for this system, so instead of just making a generic skill calculator I focused on simplicity and customizability.
       * Near perfectly typed code, made for easy open source contributions even in complex sections
       * Available both in english and in portuguese, internationalization made with next-intl
       * Markdown rendered section at the end explaining both the project and what it was made for
