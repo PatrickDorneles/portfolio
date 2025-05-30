@@ -18,7 +18,7 @@ export default function Home() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-white mb-8 font-display flex items-center">
               <Trophy className="w-8 h-8 mr-3 text-indigo-400" />
-              Quest Log (Projects)
+              Side-Quest Log (Personal Projects)
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {Object.entries(projects).map(([id, project]) => (

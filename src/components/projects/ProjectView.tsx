@@ -3,6 +3,7 @@
 import { BackButton } from "@/src/components/shared/BackButton";
 import { TechBadge } from "@/src/components/shared/TechBadge";
 import { projects } from "@/src/lib/data/projects";
+import { Link } from "lucide-react";
 
 export function ProjectView({ id }: { id: string }) {
   const project = projects[id as keyof typeof projects];
@@ -42,6 +43,7 @@ export function ProjectView({ id }: { id: string }) {
             </p>
           </section>
 
+
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 font-display">
               Challenges
@@ -55,6 +57,14 @@ export function ProjectView({ id }: { id: string }) {
             </h2>
             <p className="text-indigo-200">{project.solutions}</p>
           </section>
+
+          {project.link ? (
+            <a className="flex items-center text-indigo-400 hover:text-indigo-300 mb-8" href={project.link}>
+              <Link className="w-4 h-4 mr-2" />
+              Access the project
+            </a>
+          ) : null}
+
         </div>
       </div>
     </div>

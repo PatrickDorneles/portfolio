@@ -6,6 +6,7 @@ export interface Project {
   fullDescription: string;
   challenges: string;
   solutions: string;
+  link?: string;
 }
 
 export const projects: Record<string, Project> = {
@@ -25,6 +26,7 @@ export const projects: Record<string, Project> = {
       "The complex system for updating the points, and the variability of interactions with different 'races' of TormentaRPG was the most challenging concepts",
     solutions:
       "Analized all the available races on the system and created a strongly typed and structured state, then managed to securily update the shared state on all possible inputs",
+    link: "https://t20ac.vercel.app/en",
   },
   bin2dec: {
     title: "Binary 2 Decimal",
@@ -40,5 +42,6 @@ export const projects: Record<string, Project> = {
       "There are not that much challenges here, the most difficult part was learning how to make the conversion",
     solutions:
       "The simple task made me study more deeply the Math object from javascript and how numbers and conversions work in the language",
+    link: "https://bin2dec-kohl.vercel.app",
   },
 };
