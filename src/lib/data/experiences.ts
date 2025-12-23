@@ -100,7 +100,7 @@ export const experiences: Record<string, Experience> = {
     technologies: ["Java", "Node.js", "Express", "React"],
   },
   "nova-software": {
-    title: "Development Intern",
+    title: "Junior Developer",
     company: "Nova Software",
     period: "March 2020 – September 2020",
     description:
