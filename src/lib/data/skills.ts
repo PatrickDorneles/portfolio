@@ -130,13 +130,15 @@ export const skills: Record<string, Skill> = {
   },
   NestJS: {
     name: "NestJS",
-    level: 80,
+    level: 90,
     description:
       "Progressive Node.js framework for building scalable server-side apps",
     experience: [
       "Developed modular backends using NestJS",
       "Implemented WebSocket and REST APIs",
       "Integrated with various databases and ORMs",
+      "Applied different architectural patterns, including Clean Architecture, to enhance code maintainability and scalability",
+      "Communicated between microservices using RabbitMQ and Service Bus",
     ],
   },
   "Express.js": {
@@ -344,4 +346,40 @@ export const skills: Record<string, Skill> = {
       "Managed app builds and deployment",
     ],
   },
+  "Clean Architecture": {
+    name: "Clean Architecture",
+    level: 65,
+    description: "Architectural approach focused on separation of concerns, testability, and long-term maintainability.",
+    experience: [
+      "Applied clean architecture principles in NestJS backends",
+      "Separated domain, application, and infrastructure layers",
+      "Improved code maintainability and scalability in microservices",
+      "Facilitated easier testing and refactoring of business logic"
+    ]
+  },
+
+  Azure: {
+    name: "Azure",
+    level: 35,
+    description: "Basic experience with Microsoft Azure cloud services and infrastructure.",
+    experience: [
+      "Worked with Azure virtual machines and server configurations",
+      "Used Azure Key Vault for secrets management",
+      "Integrated services using Azure Service Bus",
+      "Supported cloud infrastructure in small-scale environments"
+    ]
+  },
+  Docker: {
+    name: "Docker",
+    level: 55,
+    description: "Practical experience using containers to standardize local development environments and test applications.",
+    experience: [
+      "Created Docker images for backend and frontend applications",
+      "Used Docker Compose to orchestrate multi-container local environments",
+      "Configured container networking to allow communication between services",
+      "Standardized development setups to reduce environment-related issues"
+    ]
+  }
+
+
 };

@@ -1,13 +1,13 @@
 export interface Proficiency {
   title: string;
   icon:
-    | "code"
-    | "database"
-    | "terminal"
-    | "book"
-    | "tools"
-    | "smartphone"
-    | "gamepad";
+  | "code"
+  | "database"
+  | "terminal"
+  | "book"
+  | "tools"
+  | "smartphone"
+  | "gamepad";
   skills: string[];
 }
 
@@ -62,7 +62,7 @@ export const proficiencies: Proficiency[] = [
   {
     title: "DevOps",
     icon: "terminal",
-    skills: ["Docker", "AWS S3", "AWS EC2", "Google Cloud", "CI/CD"],
+    skills: ["Docker", "AWS", "Azure", "Google Cloud", "CI/CD"],
   },
   {
     title: "Tools",
@@ -78,6 +78,7 @@ export const proficiencies: Proficiency[] = [
       "UI/UX",
       "Functional Programming",
       "Object-Oriented Programming",
+      "Clean Architecture",
     ],
   },
 ];
