@@ -11,3 +11,9 @@ export const socialSchema = z.object({
   linkedin: z.string().url(),
   email: z.string().email(),
 });
+
+export const serverSchema = z.object({
+  /** Local: `file:./.data/local.db` — Turso: `libsql://…` from dashboard */
+  DATABASE_URL: z.string().min(1),
+  TURSO_AUTH_TOKEN: z.string().optional(),
+});

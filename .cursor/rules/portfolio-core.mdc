@@ -1,0 +1,11 @@
+---
+description: Stack, aliases, and cross-cutting defaults for this Next.js portfolio
+alwaysApply: true
+---
+
+# Portfolio core
+
+- **Stack**: Next.js 14 App Router, React 18, TypeScript `strict`, Tailwind, shadcn-style components (Radix, CVA, `cn()`), Zod, `@t3-oss/env-nextjs`, R3F + Three on the 3D background, Lucide icons.
+- **Imports**: `tsconfig` path `@/*` → repo root; use `@/src/...` for application code (e.g. `@/src/lib/utils`, `@/src/components/...`).
+- **Components**: colocate by feature under `src/components/<feature>/`; shared primitives in `src/components/ui/`.
+- **Scope**: Keep edits limited to the task; match existing patterns instead of introducing new abstractions or dependencies unless required.

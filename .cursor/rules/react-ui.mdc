@@ -1,0 +1,12 @@
+---
+description: React components, shadcn-style UI, and Tailwind class names
+globs: **/*.tsx
+alwaysApply: false
+---
+
+# React & UI
+
+- **Client components**: Start files that use `useState`, `useEffect`, other client-only APIs, or R3F with `"use client"` at the top.
+- **Class names**: Merge Tailwind classes with `cn` from `@/src/lib/utils` to avoid conflicts.
+- **Links & external URLs**: For external links opened in a new tab, use `target="_blank"` and `rel="noopener noreferrer"`.
+- **Visual language**: The site already uses indigo accents, light-on-dark text, and `font-display` / `font-body` from CSS variables; extend the existing palette and typography rather than inventing a new design system in one-off components.

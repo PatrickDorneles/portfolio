@@ -1,15 +1,4 @@
-export interface Proficiency {
-  title: string;
-  icon:
-  | "code"
-  | "database"
-  | "terminal"
-  | "book"
-  | "tools"
-  | "smartphone"
-  | "gamepad";
-  skills: string[];
-}
+import type { Proficiency } from "@/src/lib/types/content";
 
 export const proficiencies: Proficiency[] = [
   {

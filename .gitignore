@@ -27,9 +27,15 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# local SQLite (see DATABASE_URL file:... in env)
+.data/
+*.db
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.env

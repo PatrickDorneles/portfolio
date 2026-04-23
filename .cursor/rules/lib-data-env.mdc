@@ -1,0 +1,11 @@
+---
+description: env, database, and validation
+globs: src/lib/**/*
+alwaysApply: false
+---
+
+# Lib: env, config, and database
+
+- **Env**: Define Zod fields in `src/lib/config/env.schema.ts`. Wire them in `env.ts` with `createEnv` from `@t3-oss/env-nextjs`—both `client` and `server` shapes and `runtimeEnv` must stay aligned. App code should read `env` from `src/lib/config/env` (or re-exports like `profile`) instead of raw `process.env` for those keys. Server includes `DATABASE_URL` and optional `TURSO_AUTH_TOKEN` for **libSQL** (Turso or local `file:` SQLite).
+- **Profile / social**: `src/lib/config/profile.ts` composes from validated `env`; keep URLs and copy consistent with schema.
+- **Data**: Read portfolio content with helpers in `src/lib/db/queries.ts` and types in `src/lib/types/content.ts`. Schema is in `src/lib/db/schema.ts` (Drizzle). Seeding and bulk inserts belong in `scripts/seed.ts` and `src/lib/db/seed/data/`, not in React components.

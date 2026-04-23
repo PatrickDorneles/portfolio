@@ -1,9 +1,4 @@
-export interface Skill {
-  name: string;
-  level: number; // 1-100 for RPG style progression
-  description: string;
-  experience: string[];
-}
+import type { Skill } from "@/src/lib/types/content";
 
 export const skills: Record<string, Skill> = {
   // Frontend

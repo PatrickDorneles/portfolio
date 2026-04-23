@@ -1,15 +1,15 @@
 "use client";
 
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/src/components/ui/hover-card";
-import { skills } from "@/src/lib/data/skills";
+import type { Skill } from "@/src/lib/types/content";
 import { Progress } from "@/src/components/ui/progress";
 
 interface SkillBadgeProps {
   name: string;
+  skill?: Skill;
 }
 
-export function SkillBadge({ name }: SkillBadgeProps) {
-  const skill = skills[name];
+export function SkillBadge({ name, skill }: SkillBadgeProps) {
   if (!skill) return null;
 
   const getRankTitle = (level: number) => {

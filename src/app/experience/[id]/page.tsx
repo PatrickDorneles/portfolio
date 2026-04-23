@@ -1,18 +1,16 @@
 import { ExperienceView } from "@/src/components/experience/ExperienceView";
-import { experiences } from "@/src/lib/data/experiences";
+import { getExperienceById, getExperienceIds } from "@/src/lib/db/queries";
+import { notFound } from "next/navigation";
 
-export function generateStaticParams() {
-  return Object.keys(experiences).map((id) => ({
-    id,
-  }));
+export async function generateStaticParams() {
+  const ids = await getExperienceIds();
+  return ids.map((id) => ({ id }));
 }
 
-export default function ExperiencePage({ params }: { params: { id: string } }) {
-  const experience = experiences[params.id];
-
+export default async function ExperiencePage({ params }: { params: { id: string } }) {
+  const experience = await getExperienceById(params.id);
   if (!experience) {
-    return null;
+    notFound();
   }
-
-  return <ExperienceView id={params.id} />;
+  return <ExperienceView experience={experience} />;
 }

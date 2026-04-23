@@ -2,16 +2,10 @@
 
 import { BackButton } from "@/src/components/shared/BackButton";
 import { TechBadge } from "@/src/components/shared/TechBadge";
-import { projects } from "@/src/lib/data/projects";
+import type { ProjectWithId } from "@/src/lib/db/queries";
 import { Link } from "lucide-react";
 
-export function ProjectView({ id }: { id: string }) {
-  const project = projects[id as keyof typeof projects];
-
-  if (!project) {
-    return <div>Project not found</div>;
-  }
-
+export function ProjectView({ project }: { project: ProjectWithId }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900/90 via-indigo-950/90 to-gray-900/90">
       <div className="max-w-4xl mx-auto px-4 py-16">

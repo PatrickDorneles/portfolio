@@ -1,13 +1,4 @@
-export interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  image: string;
-  fullDescription: string;
-  challenges: string;
-  solutions: string;
-  link?: string;
-}
+import type { Project } from "@/src/lib/types/content";
 
 export const projects: Record<string, Project> = {
   t20ac: {

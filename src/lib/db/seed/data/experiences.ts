@@ -1,20 +1,12 @@
-export interface Experience {
-  title: string;
-  company: string;
-  period: string;
-  description: string;
-  responsibilities: string[];
-  achievements: string[];
-  technologies: string[];
-}
+import type { Experience } from "@/src/lib/types/content";
 
 export const experiences: Record<string, Experience> = {
   db: {
     title: "Fullstack Developer II",
     company: "DB",
-    period: "June 2025 - Present",
+    period: "June 2025 - January 2026",
     description:
-      "Working as a Fullstack Developer on a project for Randon, an ecosystem composed of microservices and microfrontends focused on industrial execution and management solutions.",
+      "Working as a Fullstack Developer on a project for Randon, an ecosystem composed of microservices and microfrontends focused on industrial execution and management solutions around SAP ERP.",
     responsibilities: [
       "Develop and maintain microservices using NestJS",
       "Build and maintain microfrontends using React",
@@ -32,7 +24,10 @@ export const experiences: Record<string, Experience> = {
       "React",
       "PostgreSQL",
       "Docker",
-      "Git"
+      "Git",
+      "SAP ERP",
+      "Azure Service Bus",
+      "Azure DevOps"
     ],
   },
   wedevup: {
@@ -66,7 +61,6 @@ export const experiences: Record<string, Experience> = {
   },
   grovetech: {
     title: "Fullstack Developer",
-
     company: "GrooveTech",
     period: "December 2021 – December 2022",
     description:

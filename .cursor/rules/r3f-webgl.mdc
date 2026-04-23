@@ -1,0 +1,11 @@
+---
+description: React Three Fiber and Three.js in the background layer
+globs: src/components/background/**/*
+alwaysApply: false
+---
+
+# R3F & WebGL
+
+- All canvas/Three usage stays behind **`"use client"`** components (e.g. under `src/components/background/`).
+- Use **@react-three/fiber** (`useFrame`, canvas) and **@react-three/drei** as needed; import **three** types and math (`THREE`, `Vector3`, etc.) consistently with existing files.
+- Keep animation and physics logic colocated (e.g. custom hooks in the same file) and avoid blocking the main thread with heavy work per frame; follow the patterns in `PolyhedronAnimation.tsx` / related modules.

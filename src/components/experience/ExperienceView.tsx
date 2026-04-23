@@ -2,15 +2,9 @@
 
 import { BackButton } from "@/src/components/shared/BackButton";
 import { TechBadge } from "@/src/components/shared/TechBadge";
-import { experiences } from "@/src/lib/data/experiences";
+import type { ExperienceWithId } from "@/src/lib/db/queries";
 
-export function ExperienceView({ id }: { id: string }) {
-  const experience = experiences[id as keyof typeof experiences];
-
-  if (!experience) {
-    return <div>Experience not found</div>;
-  }
-
+export function ExperienceView({ experience }: { experience: ExperienceWithId }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900/90 via-indigo-950/90 to-gray-900/90">
       <div className="max-w-4xl mx-auto px-4 py-16">

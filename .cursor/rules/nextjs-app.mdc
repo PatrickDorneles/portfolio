@@ -1,0 +1,12 @@
+---
+description: App Router pages, layouts, API routes, and metadata
+globs: src/app/**/*
+alwaysApply: false
+---
+
+# Next.js App Router
+
+- **Layouts & pages**: Default to **Server Components**. Export `metadata` (and fonts) from `layout.tsx` using `next/font` where the site typography is set.
+- **Dynamic routes**: When data is a static map keyed by URL segment, use `generateStaticParams()` that returns the same keys as the data (see `src/app/experience/[id]/page.tsx`).
+- **Route Handlers** (`app/api/**/route.ts`): Use `NextRequest` / `NextResponse` from `next/server`. Do **not** use Pages Router types `NextApiRequest` / `NextApiResponse` in App Router files.
+- **Styling entry**: Global styles are imported from `src/app` (e.g. `./globals.css` in the root layout).

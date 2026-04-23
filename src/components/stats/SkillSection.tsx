@@ -1,9 +1,14 @@
-import { stats } from "@/src/lib/data/stats";
-import { proficiencies } from "@/src/lib/data/proficiencies";
+import type { Proficiency, Skill, Stat } from "@/src/lib/types/content";
 import { StatBox } from "./StatBox";
 import { ProficiencyBox } from "./ProficiencyBox";
 
-export function SkillSection() {
+type SkillSectionProps = {
+  stats: Stat[];
+  proficiencies: Proficiency[];
+  skillsByKey: Record<string, Skill>;
+};
+
+export function SkillSection({ stats, proficiencies, skillsByKey }: SkillSectionProps) {
   return (
     <div className="mb-16">
       <div className="text-center mb-8">
@@ -30,6 +35,7 @@ export function SkillSection() {
             title={prof.title}
             icon={prof.icon}
             skills={prof.skills}
+            skillsByKey={skillsByKey}
           />
         ))}
       </div>

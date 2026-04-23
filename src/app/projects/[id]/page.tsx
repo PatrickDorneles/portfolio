@@ -1,18 +1,16 @@
 import { ProjectView } from "@/src/components/projects/ProjectView";
-import { projects } from "@/src/lib/data/projects";
+import { getProjectById, getProjectIds } from "@/src/lib/db/queries";
+import { notFound } from "next/navigation";
 
-export function generateStaticParams() {
-  return Object.keys(projects).map((id) => ({
-    id,
-  }));
+export async function generateStaticParams() {
+  const ids = await getProjectIds();
+  return ids.map((id) => ({ id }));
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects[params.id];
-
+export default async function ProjectPage({ params }: { params: { id: string } }) {
+  const project = await getProjectById(params.id);
   if (!project) {
-    return null;
+    notFound();
   }
-
-  return <ProjectView id={params.id} />;
+  return <ProjectView project={project} />;
 }

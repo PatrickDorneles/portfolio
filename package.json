@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -48,7 +53,9 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
+    "@libsql/client": "^0.14.0",
     "date-fns": "^3.6.0",
+    "drizzle-orm": "^0.40.0",
     "embla-carousel-react": "^8.3.0",
     "eslint": "8.49.0",
     "input-otp": "^1.2.4",
@@ -73,6 +80,9 @@
   },
   "devDependencies": {
     "@types/three": "^0.176.0",
-    "eslint-config-next": "^14.2.29"
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.30.0",
+    "eslint-config-next": "^14.2.29",
+    "tsx": "^4.19.0"
   }
 }

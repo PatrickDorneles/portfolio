@@ -1,9 +1,4 @@
-export interface Stat {
-  name: string;
-  value: number;
-  description: string;
-  details: string;
-}
+import type { Stat } from "@/src/lib/types/content";
 
 export const stats: Stat[] = [
   {

@@ -9,6 +9,7 @@ import {
   Wrench,
   Gamepad,
 } from "lucide-react";
+import type { Skill } from "@/src/lib/types/content";
 import { SkillBadge } from "./SkillBadge";
 
 const icons = {
@@ -25,9 +26,10 @@ interface ProficiencyBoxProps {
   title: string;
   icon: keyof typeof icons;
   skills: string[];
+  skillsByKey: Record<string, Skill>;
 }
 
-export function ProficiencyBox({ title, icon, skills }: ProficiencyBoxProps) {
+export function ProficiencyBox({ title, icon, skills, skillsByKey }: ProficiencyBoxProps) {
   const Icon = icons[icon];
 
   return (
@@ -40,7 +42,7 @@ export function ProficiencyBox({ title, icon, skills }: ProficiencyBoxProps) {
       </div>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
-          <SkillBadge key={skill} name={skill} />
+          <SkillBadge key={skill} name={skill} skill={skillsByKey[skill]} />
         ))}
       </div>
     </div>
