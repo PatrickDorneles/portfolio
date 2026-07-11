@@ -22,6 +22,7 @@ Created a comprehensive calculator for the complex point-based skill system of t
 ## Monkey's Paw Generator
 **Description**: A hauntingly beautiful web application that transforms deepest desires into ironic nightmares using AI.
 **Tech**: Next.js, TypeScript, Tailwind CSS, Google Gemini API, Upstash Redis, next-intl
+**Image**: https://i.imgur.com/VTt55QJ.png
 **Full Description**:
 Inspired by the classic supernatural trope, the Monkey's Paw Generator grants wishes in the most cruel and ironic way possible. The AI weaves a short, gothic story revealing the terrible price paid for a desire.
 - **Core AI Engine**: Integration with Gemini API to generate darkly ironic short stories.

@@ -28,7 +28,7 @@ export const projects: Record<string, Project> = {
     title: "Monkey's Paw Generator",
     description: "A hauntingly beautiful web application that transforms deepest desires into ironic nightmares using AI.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Google Gemini API", "Upstash Redis", "next-intl"],
-    image: "https://raw.githubusercontent.com/PatrickDorneles/monkeys-paw-generator/main/public/logo.svg",
+    image: "https://i.imgur.com/VTt55QJ.png",
     fullDescription: `
       Inspired by the classic supernatural trope, the Monkey's Paw Generator grants wishes in the most cruel and ironic way possible. The AI weaves a short, gothic story revealing the terrible price paid for a desire.
       * Core AI Engine: Integration with Gemini API to generate darkly ironic short stories.
