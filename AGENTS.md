@@ -36,4 +36,4 @@ This repository is a **Next.js 14 (App Router)** portfolio: **TypeScript (strict
 - `npm run db:push` / `db:generate` / `db:migrate` — Drizzle schema  
 - `npm run db:seed` — populate SQLite / Turso from `src/lib/db/seed/data/`
 
-Prefer small, focused changes that match existing naming and file placement.
+- **Workflow**: Follow the project workflow defined in `docs/workflow`.

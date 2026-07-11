@@ -4,19 +4,24 @@ export const projects: Record<string, Project> = {
   t20ac: {
     title: "Tormenta 20 Calculator",
     description:
-      "A platform to help Table Top RPG players to create their characters using the T20 system",
-    tech: ["React", "NextJS", "TailwindCSS", "Markdown", "Jotai"],
+      "A specialized web application for the Brazilian TTRPG Tormenta 20 - Edição Jogo do Ano, assisting players in character creation by streamlining attribute calculation and the point-buy system.",
+    tech: ["React", "NextJS", "TailwindCSS", "Markdown", "Jotai", "next-intl", "Zod", "html-to-image"],
     image: "https://i.imgur.com/dgCLha1.png",
     fullDescription: `
-      Created this calculator for a complex point based skill system for the Tormenta20 RPG system, a the time there were no calculator likewise made for this system, so instead of just making a generic skill calculator I focused on simplicity and customizability.
-      * Near perfectly typed code, made for easy open source contributions even in complex sections
-      * Available both in english and in portuguese, internationalization made with next-intl
-      * Markdown rendered section at the end explaining both the project and what it was made for
+      Created a comprehensive calculator for the complex point-based skill system of the Tormenta20 RPG system. The project focuses on simplicity, customizability, and high technical quality.
+      * Dynamic Attribute Calculator: Real-time calculation following official T20 rules.
+      * Smart Point-Buy System: Effortless point distribution with instant cost calculation and validation.
+      * Racial Bonus Integration: Automatic application of racial bonuses, including "Choice" and "Mixed" types.
+      * Character Management: Local creation, saving, and switching between multiple characters.
+      * Export/Import: Supports JSON data and high-quality PNG image export of the attribute sheet.
+      * QR Code Export: Optional QR codes in exported images for direct character configuration import via URL.
+      * Internationalization: Full support for English and Portuguese via next-intl.
+      * Technical Excellence: Near perfectly typed code, designed for easy open-source contributions.
     `,
     challenges:
-      "The complex system for updating the points, and the variability of interactions with different 'races' of TormentaRPG was the most challenging concepts",
+      "Managing the complex point update system and the high variability of racial interactions within the T20 rules.",
     solutions:
-      "Analized all the available races on the system and created a strongly typed and structured state, then managed to securily update the shared state on all possible inputs",
+      "Analyzed all available races in the system to create a strongly typed and structured state, ensuring secure and accurate updates across all possible inputs.",
     link: "https://t20ac.vercel.app/en",
   },
   bin2dec: {

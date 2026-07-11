@@ -1,0 +1,25 @@
+# Project Context
+
+## Overview
+This project is a professional portfolio built with a modern tech stack focusing on performance, type safety, and visual appeal.
+
+## Technologies
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript (Strict mode)
+- **Styling**: Tailwind CSS + shadcn/ui (Radix UI primitives)
+- **Database**: Drizzle ORM with libSQL (Turso in production, SQLite locally)
+- **Environment**: @t3-oss/env-nextjs + Zod for validated environment variables
+- **Visuals**: React Three Fiber (R3F) + Three.js for animated 3D backgrounds
+
+## Principles & Best Practices
+- **Server First**: Use Server Components by default. Use `"use client"` only when necessary (interactivity, browser APIs, R3F).
+- **Type Safety**: Strict TypeScript throughout. Domain types are centralized in `src/lib/types/`.
+- **Configuration**: Environment variables are validated via a schema and accessed through a central config in `src/lib/config/`.
+- **Database Access**: All runtime database reads go through `src/lib/db/queries.ts` to maintain a clean separation between schema and data access.
+- **Styling**: Use the `cn()` utility for conditional class merging.
+
+## Architecture
+- `src/app/`: Routing and page layout.
+- `src/components/`: Feature-based component organization.
+- `src/lib/`: Shared logic, database configuration, and types.
+- `src/lib/db/seed/data/`: Initial data source for the project.

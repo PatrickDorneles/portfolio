@@ -1,0 +1,17 @@
+# Project Tasks
+
+## Past Tasks
+- [x] Initial Project Setup (Next.js, Drizzle, Tailwind, R3F)
+- [x] Database Schema Design
+- [x] Seed Data Implementation
+
+## Current Tasks
+- [x] Create project documentation structure (`/docs`)
+- [x] Define project workflow
+- [x] Extract source of truth seeds to `/docs/source`
+- [x] Document project context
+
+## Future Tasks
+- [ ] TODO: Add new features
+- [ ] TODO: Fix bugs
+- [ ] TODO: Improve performance

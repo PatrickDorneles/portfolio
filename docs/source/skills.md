@@ -1,0 +1,144 @@
+# Skills
+
+## Frontend
+- **JavaScript** (85%): Proficient in modern JavaScript (ES6+) for dynamic web development
+  - Developed complex frontend applications
+  - Implemented asynchronous programming with Promises and async/await
+  - Used JavaScript extensively in React and Next.js projects
+- **TypeScript** (90%): Expert in type-safe JavaScript superset and scalable codebases
+  - Implemented complex type systems in large projects
+  - Created reusable and strongly typed components
+  - Improved code maintainability and reduced runtime errors
+- **React** (85%): Advanced skills in component-based UI development with React
+  - Built responsive, reusable components
+  - Managed state with Redux and Zustand
+  - Implemented React Query for efficient data fetching
+- **Next.js** (75%): Specialist in SSR, static site generation, and optimized routing
+  - Built server-rendered and statically generated apps
+  - Optimized applications for performance and SEO
+  - Used Next.js API routes for backend integration
+- **TailwindCSS** (80%): Utility-first CSS framework for rapid UI styling
+  - Styled complex components with Tailwind
+  - Customized themes and responsive designs
+- **Astro** (50%): Static site builder optimized for performance
+  - Built small projects using Astro
+  - Built a big project focusing on fast and stable server rendering
+  - Integrated React components within Astro projects
+- **HTML** (90%): Strong foundation in semantic HTML and accessibility
+  - Created SEO-friendly markup
+  - Implemented accessible web standards
+- **CSS** (85%): Proficient in responsive design and modern CSS techniques
+  - Built layouts using Flexbox and Grid
+  - Implemented animations and transitions
+- **Remix** (35%): Familiar with Remix framework for React-based routing and data loading
+  - Built small proof of concept projects
+  - Explored Remix loader and action APIs
+- **Redux** (70%): State management library for predictable application state
+  - Managed complex app state in React projects
+  - Implemented Redux Toolkit for streamlined code
+- **Zustand** (50%): Lightweight state management with hooks
+  - Used Zustand for local state in React components
+  - Simplified state logic with minimal boilerplate
+
+## Backend
+- **Node.js** (85%): Experienced server-side JavaScript runtime for scalable applications
+  - Built RESTful APIs and microservices
+  - Handled asynchronous workflows and event-driven programming
+  - Optimized backend performance
+- **NestJS** (90%): Progressive Node.js framework for building scalable server-side apps
+  - Developed modular backends using NestJS
+  - Implemented WebSocket and REST APIs
+  - Integrated with various databases and ORMs
+  - Applied different architectural patterns, including Clean Architecture, to enhance code maintainability and scalability
+  - Communicated between microservices using RabbitMQ and Service Bus
+- **Express.js** (70%): Minimalist web framework for Node.js
+  - Created backend services and middleware
+  - Handled routing and error management
+- **Java** (70%): Familiar with Java for backend development and Android
+  - Maintained Android app codebases
+  - Worked on Java Spring backend projects
+  - Studied OPP principles through Java
+  - Developed desktop applications for studies using Java
+- **Spring Framework** (35%): Experience with Spring ecosystem for Java backend
+  - Worked on backend maintenance and bug fixes
+  - Implemented features in Spring Boot apps
+- **C#** (55%): Developed backend systems using C# and .NET frameworks
+  - Maintained legacy .NET and .NET Core applications
+  - Fixed bugs and improved system stability
+- **.Net Core** (50%): Cross-platform framework for modern C# development
+  - Implemented bug fixes and feature updates
+  - Worked on APIs and backend services
+- **Rust** (30%): Basic knowledge of Rust programming language
+  - Studied Rust for systems programming
+  - Implemented small experimental projects
+- **AWS** (40%): Experience with cloud services for hosting and storage
+  - Deployed applications using EC2 and S3
+  - Configured environments for production systems
+  - Used AWS services in conjunction with Firebase and Google Cloud
+- **CI/CD** (35%): Basic experience with continuous integration and deployment pipelines
+  - Implemented basic pipelines for automated testing and deployment
+  - Integrated CI/CD tools with Git repositories
+  - Maintained build and release workflows
+- **React Native** (60%): Development of cross-platform mobile applications using React Native and Expo.
+  - Built mobile features using React Native
+  - Integrated APIs in mobile projects
+  - Used Expo for rapid development
+- **Android (Java)** (50%): Experience in maintaining and developing Android applications using Java.
+  - Maintained Android applications
+  - Developed new features using Java
+  - Fixed bugs in production apps
+- **Lua** (30%): Experience in game development using Lua with the LÖVE framework.
+  - Developed prototyped games using the LÖVE framework
+  - Implemented game logic in Lua
+- **Godot** (50%): Game development using the Godot engine for personal and educational projects.
+  - Created game prototypes with Godot
+  - Explored 2D game development
+  - Studied GDScript syntax and features
+  - Experimented with game prototypes
+- **Git** (85%): Version control using Git in team-based and solo projects.
+  - Used Git for collaborative development
+  - Managed branches and pull requests
+  - Resolved merge conflicts
+- **Vim** (75%): Proficiency in using Vim as a primary code editor.
+  - Configured Vim for JavaScript and TypeScript development
+  - Utilized Vim keybindings for productivity
+  - Worked efficiently in terminal environments
+- **Tmux** (65%): Terminal multiplexer for improved workflow and productivity.
+  - Managed multiple sessions in Tmux
+  - Integrated Tmux with Vim
+  - Automated workflows with Tmux scripting
+- **NeoVim** (70%): Advanced configurations and usage of NeoVim for modern development workflows.
+  - Configured NeoVim with LSP and Tree-sitter
+  - Created custom plugins and keybindings
+  - Streamlined development setup
+  - Developed a customized NeoVim setting to maximize productivity
+- **Google Cloud** (35%): Experience with Google Cloud for deploying and managing applications.
+  - Deployed projects on Google Cloud
+  - Managed services using GCP console
+  - Configured Firebase integrations
+- **Object-Oriented Programming** (80%): Strong grasp of OOP principles applied in multiple projects.
+  - Applied SOLID principles in backend development
+  - Designed modular and scalable systems
+  - Utilized design patterns in real-world applications
+- **Functional Programming** (60%): Knowledge of functional programming paradigms and their application.
+  - Used FP techniques in JavaScript and TypeScript
+  - Explored immutability and pure functions
+  - Studied functional libraries and concepts
+- **Expo** (35%): Framework and platform for React Native development
+  - Utilized Expo to speed up development
+  - Managed app builds and deployment
+- **Clean Architecture** (65%): Architectural approach focused on separation of concerns, testability, and long-term maintainability.
+  - Applied clean architecture principles in NestJS backends
+  - Separated domain, application, and infrastructure layers
+  - Improved code maintainability and scalability in microservices
+  - Facilitated easier testing and refactoring of business logic
+- **Azure** (35%): Basic experience with Microsoft Azure cloud services and infrastructure.
+  - Worked with Azure virtual machines and server configurations
+  - Used Azure Key Vault for secrets management
+  - Integrated services using Azure Service Bus
+  - Supported cloud infrastructure in small-scale environments
+- **Docker** (55%): Practical experience using containers to standardize local development environments and test applications.
+  - Created Docker images for backend and frontend applications
+  - Used Docker Compose to orchestrate multi-container local environments
+  - Configured container networking to allow communication between services
+  - Standardized development setups to reduce environment-related issues
