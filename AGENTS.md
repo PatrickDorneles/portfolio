@@ -18,6 +18,15 @@ This repository is a **Next.js 14 (App Router)** portfolio: **TypeScript (strict
 
 - Path alias: `@/*` points at the **repository root** (see `tsconfig.json`). App code is typically imported as `@/src/...` (e.g. `@/src/lib/utils`, `@/src/components/...`).
 
+## Strict Rules (The "Forbidden" List)
+
+- **NO `any`**: Use strict types. If a type is unknown, use `unknown` and narrow it.
+- **NO direct `process.env`**: Read validated environment variables ONLY via `src/lib/config/env.ts`.
+- **NO direct DB calls in components**: All database reads MUST go through `src/lib/db/queries.ts`.
+- **NO legacy Next.js APIs**: Use App Router conventions exclusively (e.g., `NextResponse` instead of `res.status().json()`).
+- **NO inline styles**: Use Tailwind CSS exclusively.
+- **NO unvalidated input**: Use Zod for any external data or form input.
+
 ## Conventions to preserve
 
 - **Server Components by default**; add `"use client"` only for hooks, browser APIs, or R3F/Three.

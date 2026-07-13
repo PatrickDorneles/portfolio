@@ -6,7 +6,11 @@ To ensure quality and consistency in the portfolio project, follow these steps f
 2. **Research & Plan**: Understand the requirements, explore the codebase, and plan the implementation.
 3. **Approval**: Get approval for the plan before starting the implementation.
 4. **Implementation**: Write the code following project conventions.
-5. **Typecheck, Build, Lint, and Prettier**: Run verification commands to ensure the code is correct and formatted.
+5. **Verification**: Run the following checks:
+    - [ ] `npm run lint` (Linting)
+    - [ ] `npm run build` (Typecheck & Build)
+    - [ ] Manual verification of the change in `npm run dev`
+    - [ ] Accessibility/Responsiveness check (Chrome DevTools)
 6. **Review & Approval**: Submit a PR and get it reviewed and approved.
 7. **Commit & Push**: Commit the final changes and push to the remote repository.
 8. **Merge**: Merge the feature branch into `main`.
